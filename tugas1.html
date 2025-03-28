@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Biodata Diri</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+        .form-container {
+            background: white;
+            padding: 2px;
+            width: 500px;
+            outline: 1px   solid rgb(72, 72, 72);
+        }
+        h2 {
+            position: relative;
+            top: -35px;
+            background: white;
+            padding: 0 10px;
+            margin-bottom: 0px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<script lang="javaScript">
+    function pesan(){
+        alert("Biodata berhasil diinput")
+    }
+</script>
+
+<body>
+    <div class="form-container">
+        <h2>Biodata Diri</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Nama Depan</td>
+                    <td><input type="text" name="nama_depan" placeholder="Nama Depan"></td>
+                </tr>
+                <tr>
+                    <td>Nama Belakang</td>
+                    <td><input type="text" name="nama_belakang" placeholder="Nama Belakang"></td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <select name="hobi">
+                            <option>Pilih Hobi</option>
+                            <option>Olahraga</option>
+                            <option>Musik</option>
+                            <option>Membaca</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <select name="jenis_kelamin">
+                            <option>Pilih Jenis Kelamin</option>
+                            <option>Laki-laki</option>
+                            <option>Perempuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea name="alamat" placeholder="Alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Nomor Handphone</td>
+                    <td><input type="text" name="nomor_hp" placeholder="Nomor Handphone"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit" onclick="pesan()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
